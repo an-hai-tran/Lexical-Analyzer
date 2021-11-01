@@ -4,6 +4,7 @@ A lexical analyzer for small programming language and a program to test it.
 A parser and an interpreter to the same language will be built later on. 
 
 The syntax definitions of a small programming language are given below using EBNF notations: 
+
 Prog ::= PROGRAM IDENT StmtList END PROGRAM  
 StmtList ::= Stmt; {Stmt;} 
 Stmt ::= DeclStmt | ControlStmt  
@@ -32,7 +33,7 @@ ident := Letter {(Letter|Digit|_)}
 Letter := [a-z A-Z] 
 Digit := [0-9] 
  
-The token for an identifier is IDENT. 
+ The token for an identifier is IDENT. 
  
 2. Integer constants, referred to by iconst terminal, are defined as one or more digits. It is defined 
 as: 
